@@ -1,0 +1,3 @@
+include ':droidtermsprovider'
+include ':app'
+rootProject.name = "DroidQuiz"
