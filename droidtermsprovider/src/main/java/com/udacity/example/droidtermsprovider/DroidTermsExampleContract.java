@@ -15,14 +15,14 @@ public class DroidTermsExampleContract implements BaseColumns {
     //---------------------- CONTENTS ----------------------
 
     //if we have to access content from content provider: we have define uri
-    private static final Uri BASE_CONTENT_URI = Uri.parse("content://" + CONTENT_AUTHORITY);
+    public static final Uri BASE_CONTENT_URI = Uri.parse("content://" + CONTENT_AUTHORITY);
 
     //paths from the uri
-    private static final String PATH_TERMS = "terms";
+    public static final String PATH_TERMS = "terms";
 
     // content uri : total full list of definitions and items
     //content://com.example.udacity.droidtermsexample/terms
-    private static final Uri CONTENT_URI = BASE_CONTENT_URI.buildUpon().appendPath(PATH_TERMS).build();
+    public static final Uri CONTENT_URI = BASE_CONTENT_URI.buildUpon().appendPath(PATH_TERMS).build();
 
     //content type : list of definition
     //content://com.example.udacity.droidtermsexample/terms/vnd.android.cursor.dir
@@ -38,8 +38,8 @@ public class DroidTermsExampleContract implements BaseColumns {
     //---------------------- DATABASE ----------------------
     // sql type :  Content Provider
 
-    private static final int DATABASE_VERISION = 1;
-    private static final String DATABASE_NAME = "terms";
+    public static final int DATABASE_VERISION = 1;
+    public static final String DATABASE_NAME = "terms";
 
     //table name
     public static final String TERMS_TABLE = "term_entries";
